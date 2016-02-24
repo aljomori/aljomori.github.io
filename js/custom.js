@@ -1,17 +1,17 @@
 (function($){
 
 	/* ---------------------------------------------- /*
-	 * Preloader  
-	/* ---------------------------------------------- */ 
+	 * Preloader
+	/* ---------------------------------------------- */
 
-	$(window).load(function() { 
+	$(window).load(function() {
 		$('#status').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow'); 
-	}); 
+		$('#preloader').delay(350).fadeOut('slow');
+	});
 
 	$(document).ready(function() {
 
-		$('body').scrollspy({ 
+		$('body').scrollspy({
 			target: '.navbar-custom',
 			offset: 50
 		})
@@ -29,11 +29,11 @@
 		/* ---------------------------------------------- */
 
 		$('#intro').backstretch([
-			'/curriculum/images/bg4.jpg',
+			'/images/bg4.jpg',
 		], {duration: 3000, fade: 750});
 
 		/* ---------------------------------------------- /*
- 		 * Navbar 
+ 		 * Navbar
 		/* ---------------------------------------------- */
 
 		var navbar = $('.navbar');
@@ -87,7 +87,7 @@
 		wow.init();
 
 		/* ---------------------------------------------- /*
-		 * Owl slider 
+		 * Owl slider
 		/* ---------------------------------------------- */
 
 		$("#owl-clients").owlCarousel({
@@ -136,7 +136,7 @@
 		$(".video").fitVids();
 
 		/* ---------------------------------------------- /*
-		 * E-mail validation 
+		 * E-mail validation
 		/* ---------------------------------------------- */
 
 		function isValidEmailAddress(emailAddress) {
