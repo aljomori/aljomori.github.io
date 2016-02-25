@@ -1,1 +1,1 @@
-# aljomor.github.io
+# aljomori.github.io
