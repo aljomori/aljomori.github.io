@@ -30,6 +30,8 @@
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600%7CRaleway:300,400,500,600,700,800"
           rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTJT0VVC94"></script>
 </head>
 <body>
 <!-- preloader -->
@@ -416,5 +418,12 @@
 <script src="js/sweetalert.js"></script>
 <!-- core custom js -->
 <script src="js/custom.js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DTJT0VVC94');
+</script>
 </body>
 </html>
