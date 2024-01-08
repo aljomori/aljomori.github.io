@@ -1,847 +1,665 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-  <title>Alexis Moreno - Resumen Curricular </title>
-
-  <!-- CSS -->
-  <!-- Bootstrap core CSS -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-
-  <!-- Owl Carousel -->
-  <link href="css/owl.theme.css" rel="stylesheet">
-  <link href="css/owl.carousel.css" rel="stylesheet">
-
-  <!-- Magnific-popup lightbox -->
-  <link href="css/magnific-popup.css" rel="stylesheet">
-
-  <!-- Simple text rotator -->
-  <link href="css/simpletextrotator.css" rel="stylesheet">
-
-  <!-- Font Awesome CSS -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-
-  <!-- Animate css -->
-  <link href="css/animate.css" rel="stylesheet">
-
-  <!-- Custom styles CSS -->
-  <link href="css/style.css" rel="stylesheet" media="screen">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Alexis Moreno / aljomori</title>
+    <meta name="description" content="ALJOMORI, Alexis Moreno, Frontend, Developer, Fullstack, aljomori, aljomor">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Awesome fonts-->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <!--fontastic fonts-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!--lity-->
+    <link rel="stylesheet" href="css/lity.css">
+    <!--animate-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!--sweetalert-->
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!--custom-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--left side-->
+    <link rel="stylesheet" href="css/side-menu.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600%7CRaleway:300,400,500,600,700,800"
+          rel="stylesheet">
 </head>
 <body>
-
-<div class="wrapper">
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="status">
-      <div class="status-mes"><h4>Alexis Moreno</h4></div>
+<!-- preloader -->
+<div id="loader-wrapper">
+    <div class="world">
+        <img src="images/loader.svg" alt="" />
     </div>
-  </div>
-
-
-  <!-- Navigation start -->
-
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"> <img src="images/logo.png" width="40" height="40"> Alexis Moreno</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#intro">Inicio</a></li>
-          <li><a href="#profile">Perfil</a></li>
-          <li><a href="#services">Servicio</a></li>
-          <li><a href="#resume">Resumen</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#contact">Contactame</a></li>
-        </ul>
-      </div>
-
+</div>
+<!-- preloader ends!-->
+<!--Left side wrap-->
+<div class="left-side-area">
+    <!--Header-->
+    <header class="header-left-area">
+        <div class="container">
+            <!-- Nav -->
+            <nav class="navbar">
+                <div class="header-content">
+                    <div class="image-item">
+                        <div class="status active"></div> <!-- if you want to use away instead of active. just need to change class active to away -->
+                        <img src="images/profile-image.png" alt="" />
+                    </div>
+                    <div class="caption-area">
+                    <h5 class="name">Alexis Moreno</h5>
+                    <h6 class="designation skills cd-headline clip">
+                        <span>I'm a</span>
+                        <span class="cd-words-wrapper">
+                        <b class="is-visible">Developer</b>
+                        <b>Frontend</b>
+                        <b>Backend</b>
+                        <b>Freelancer</b>
+                        </span>
+                    </h6>
+                </div>
+                </div>
+                <!--menu toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#side-menu"
+                        aria-controls="side-menu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                  <span class="icon-th"></span>
+                  </span>
+                </button>
+                <!--menu toggler ends! -->
+                <!--menu main area-->
+                <div class="menu-main-area align-items-center">
+                    <!--menu -->
+                    <div class="collapse navbar-collapse" id="side-menu">
+                        <ul id="menu_scroll" class="navbar-nav side-menu">
+                            <li><a href="#home" class="scroll active"><span class="icon-home-house-streamline"></span> Home</a></li>
+                            <li><a href="#about" class="scroll"><span class="icon-map-streamline-user"></span> About</a></li>
+                            <li><a href="#experience" class="scroll"><span class="icon-dashboard-speed-streamline"></span> Experience</a></li>
+                            <li><a href="#portfolio" class="scroll"><span class="icon-streamline-suitcase-travel"></span> Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <!--menu ends!-->
+                </div>
+                <!--menu main area ends!-->
+                <ul class="header-social-icons">
+                    <li><a href="https://github.com/aljomori" target="_blank" title="Github"> <i class="fab fa-github"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/alexis-jos%C3%A9-moreno-rivas-809645a8/" target="_blank" title="LinkedIn"> <i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <h6 class="copy-txt">Copyright © 2023 Alexis Moreno</h6>
+            </nav>
+            <!-- Nav ends!-->
+        </div>
+    </header>
+    <!-- Header ends! -->
+</div>
+<!--Left side wrap-->
+<!--Right side wrap-->
+<div class="right-side-area">
+<!-- Start home -->
+<div id="home" class="home-area wave-area">
+    <div class="water-effect"></div>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+            <!--Title text-->
+            <div class="col-12 col-md-8 col-lg-8 home-content text-center">
+                <!-- Super heading -->
+                <h5 class="greet">Hello, my name is <strong>Alexis Moreno</strong></h5>
+                <!-- Super heading ends!-->
+                <!-- heading text -->
+                <h1 class="skills cd-headline letters scale">
+                    <span>I'm a</span>
+                        <span class="cd-words-wrapper">
+                        <b class="is-visible">Developer</b>
+                        <b>Frontend</b>
+                        <b>Backend</b>
+                        <b>Freelancer</b>
+                        </span>
+                </h1>
+                <!-- heading text ends!-->
+                <!-- description -->
+                <p class="description">I'm a Full-Stack Web Developer with extensive
+                    experience for over 6 years. My expertise is to create and optimize PWA,
+                    Web-apps, and many more...
+                </p>
+                <!-- description ends!-->
+                <!-- button-->
+                <div class="button-area">
+                    <a class="btn scroll" href="#portfolio">Portfolio</a>
+                    <a class="btn scroll button-scheme" href="#quote">Contact me</a>
+                </div>
+                <!-- button ends! -->
+            </div>
+            <!--Title text ends!-->
+        </div>
     </div>
-  </nav>
-
-  <!-- Navigation end -->
-
-  <!-- Intro section start -->
-
-  <section id="intro" class="section">
-
+</div>
+<!-- home ends! -->
+<!-- Start about -->
+<div id="about" class="single-section about-area">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12">
-
-          <div class="hello wow bounceInDown">
-          </div>
-
-          <a href="#profile">
-
-          </a>
-
+        <div class="row">
+            <!-- About image -->
+            <div class="col-sm-12 col-lg-6">
+                <div class="about-img">
+                    <img src="images/about-image.png" alt=""/>
+                </div>
+            </div>
+            <!-- About image ends! -->
+            <!-- about content -->
+            <div class="col-sm-12 col-lg-6">
+                <div class="about-content">
+                    <!--Heading section-->
+                    <div class="section-heading">
+                        <h2 class="section-title">About Me</h2>
+                        <h6 class="about-role">I am a Full-Stack Web Developer</h6>
+                    </div>
+                    <!--Heading section ends!-->
+                    <!--Describtion-->
+                    <p>An experienced web developer with a
+                        strong interest in projects that require
+                        both conceptual and analytical thinking.
+                    </p>
+                    <p>
+                        Fully-committed to designing and
+                        developing innovative web-based materials
+                        that users will love. Always eager to learn
+                        more tricks from anyone - regardless of
+                        the industry they're working in.
+                    </p>
+                    <!--Describtion ends!-->
+                    <hr>
+                    <!--about details-->
+                    <ul class="list-inline about-info">
+                        <li>
+                            <span>Name:</span>
+                            <p>Alexis Moreno</p>
+                        </li>
+                        <li>
+                            <span>Email:</span>
+                            <p><a href="mailto:aljomori@gmail.com">aljomori@gmail.com</a></p>
+                        </li>
+                        <li>
+                            <span>Age:</span>
+                            <p>25</p>
+                        </li>
+                        <li>
+                            <span>From:</span>
+                            <p>Santiago, Chile</p>
+                        </li>
+                    </ul>
+                    <!--about details ends!-->
+                    <!--buttons-->
+                    <a href="https://aljomori-files.s3.amazonaws.com/cv.pdf" target="_blank" class="btn button-scheme">Resume</a>
+                    <a href="#experience" class="btn scroll">Experience</a>
+                    <!--buttons ends!-->
+                </div>
+            </div>
         </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-    <div class="mouse-icon">
-      <div class="wheel"></div>
+        <!-- about content ends! -->
     </div>
-  </section>
-
-
-  <!-- Intro section end -->
-
-  <!-- Profile contact callout section -->
-
-  <section id="profile-contact">
-
+</div>
+<!-- Start about ends! -->
+<!-- Start experience -->
+<div id="experience" class="single-section silver-bg experience-area">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-sm-4 wow bounceInLeft">
-          <div class="profile-item">
-            <i class="fa fa-envelope-o"></i>
-            <h5><a href="mailto:aljomori@gmail.com">aljomori@gmail.com</a></h5>
-          </div>
+        <div class="row">
+            <div class="col-lg-5 col-sm-12">
+                <!--experience content-->
+                <div class="exp-content">
+                    <h5 class="subtitle">Having 6 years Experience</h5>
+                    <h3>Amazing <span>experience</span> with those companies</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam
+                    </p>
+                    <p>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.
+                    </p>
+                    <a href="#portfolio" class="btn scroll button-scheme">Portfolio</a>
+                </div>
+                <!--experience content ends!-->
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 ">
+                        <!--company name area -->
+                        <div class="exp-block">
+                            <img class="img-icon" width="80px" src="images/sosafe.jpeg" alt=""/>
+                            <h4>SOSAFE</h4>
+                            <h6>2017 - Present</h6>
+                        </div>
+                    </div>
+                    <!--company name area ends!-->
+                    <!--company name area -->
+                    <div class="col-sm-6 col-md-6 ">
+                        <div class="exp-block">
+                            <img class="img-icon"  width="80px" src="images/blanclabsLogo.png" alt=""/>
+                            <h4>BlancLink</h4>
+                            <h6>2016 - 2017</h6>
+                        </div>
+                    </div>
+                    <!--company name area ends!-->
+                    <!--company name area -->
+                    <div class="col-sm-6 col-md-6">
+                        <div class="exp-block">
+                            <img class="img-icon"  width="80px" src="images/teravisionLogo.png" alt=""/>
+                            <h4>Teravision</h4>
+                            <h6>2015 - 2016</h6>
+                        </div>
+                    </div>
+                    <!--company name area ends!-->
+                    <!--company name area -->
+                    <div class="col-sm-6 col-md-6 ">
+                        <div class="exp-block">
+                            <img class="img-icon"  width="80px" src="images/cantvlogo.png" alt=""/>
+                            <h4>Cantv</h4>
+                            <h6>2012 - 2015</h6>
+                        </div>
+                    </div>
+                    <!--company name area ends!-->
+                </div>
+            </div>
         </div>
+    </div>
+</div>
+<!-- experience ends! -->
 
-        <div class="col-sm-4 wow bounceInUp">
-          <div class="profile-item">
-            <i class="fa fa-mobile"></i>
-            <h5>+56 940 866 411</h5>
-          </div>
-        </div>
-
-        <div class="col-sm-4 wow bounceInRight">
-          <div class="profile-item">
-            <i class="fa fa-map-marker"></i>
-            <h5> Nueva San Martín 1490, Santiago, Chile</h5>
-          </div>
-        </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Profile contact callout section -->
-
-  <!-- Profile section start -->
-
-  <section id="profile" class="section">
-
+<!--portfolio-->
+<div id="portfolio" class="single-section silver-bg portfolio-area">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12 headline wow bounceInDown">
-          <h2>Alexis Moreno</h2>
-          <p>Desarrollador Web.</p>
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="section-heading">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-description">
+                        This is what i did and things that i like to do to.
+                    </p>
+                </div>
+            </div>
+            <!--portfolio list-->
+            <div class="col-md-12 col-lg-12">
+                <div class="works-filter-wrap">
+                    <div class="row">
+                        <ul class="col-lg-12 col-md-12 list-inline works-filter">
+                            <li class="list-inline-item tab-active" data-filter="*">All</li>
+                            <li class="list-inline-item" data-filter=".brand">Brand</li>
+                            <li class="list-inline-item" data-filter=".design">Design</li>
+                            <li class="list-inline-item" data-filter=".photos">Photos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="works-container row">
+                    <div class="col-lg-4 col-sm-6 works-item brand">
+                        <div class="item-overlay">
+                            <div class="category">Brand</div>
+                            <img src="images/portfolio-01.jpg" alt=""/>
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Business Card</h6>
+                                <div class="overlay-icons">
+                                    <a href="images/portfolio-01.jpg" data-lity>
+                                        <span class="icon-eye"></span>
+                                    </a>
+                                    <a href="#0">
+                                        <span class="icon-link"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 works-item design">
+                        <div class="item-overlay">
+                            <div class="category">Design</div>
+                            <img src="images/portfolio-02.jpg" alt=""/>
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Anime Art</h6>
+                                <div class="overlay-icons">
+                                    <a href="images/portfolio-02.jpg" data-lity>
+                                        <span class="icon-eye"></span>
+                                    </a>
+                                    <a href="#0">
+                                        <span class="icon-link"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 works-item photos">
+                        <div class="item-overlay">
+                            <div class="category">Photos</div>
+                            <img src="images/portfolio-03.jpg" alt=""/>
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Business Card</h6>
+                                <div class="overlay-icons">
+                                    <a href="images/portfolio-03.jpg" data-lity>
+                                        <span class="icon-eye"></span>
+                                    </a>
+                                    <a href="#0">
+                                        <span class="icon-link"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 works-item photos">
+                        <div class="item-overlay">
+                            <div class="category">Photos</div>
+                            <img src="images/portfolio-04.jpg" alt=""/>
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Business Card</h6>
+                                <div class="overlay-icons">
+                                    <a href="images/portfolio-04.jpg" data-lity>
+                                        <span class="icon-eye"></span>
+                                    </a>
+                                    <a href="#0">
+                                        <span class="icon-link"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 works-item brand">
+                        <div class="item-overlay">
+                            <div class="category">Brand</div>
+                            <img src="images/portfolio-05.jpg" alt=""/>
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Business Card</h6>
+                                <div class="overlay-icons">
+                                    <a href="images/portfolio-05.jpg" data-lity>
+                                        <span class="icon-eye"></span>
+                                    </a>
+                                    <a href="#0">
+                                        <span class="icon-link"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 works-item photos">
+                        <div class="item-overlay">
+                            <div class="category">Photos</div>
+                            <img src="images/portfolio-06.jpg" alt=""/>
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Business Card</h6>
+                                <div class="overlay-icons">
+                                    <a href="images/portfolio-06.jpg" data-lity>
+                                        <span class="icon-eye"></span>
+                                    </a>
+                                    <a href="#0">
+                                        <span class="icon-link"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--portfolio list ends!-->
         </div>
-
-        <div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
-          <img class="avatar" src="images/photo.png" alt="">
-          <div class="profile-widget">
-            <br/>
-            <ul class="widget-social">
-              <li>
-                <a href="https://www.facebook.com/alexis.moreno.5454"
-                target="_blank"
-                >
-                  <i class="fa fa-facebook fa-fw"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/alexis-jos%C3%A9-moreno-rivas-809645a8/"
-                   target="_blank"
-                >
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://plus.google.com/+alexismoreno"
-                   target="_blank"
-                ><i class="fa fa-google-plus"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/aljomori"
-                   target="_blank"
-                ><i class="fa fa-github-alt"></i></a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 wow bounceInUp">
-
-          <div class="profile-widget">
-            <h3>FrontEnd:</h3>
-
-            <h5> HTML </h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-
-            <h5> CSS </h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-
-            <h5> Javascript Vanilla </h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-
-            </div>
-            <h5> React </h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-
-            </div>
-
-            <h5> Angular </h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-
-          </div>
-
-
-        </div><!-- .col-md-3 -->
-
-        <div class="col-md-3 col-sm-6 wow bounceInUp">
-
-          <div class="profile-widget">
-            <h3>BackEnd:</h3>
-
-            <h5> PHP </h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-
-            <h5> NodeJS </h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-
-            <h5> PostgreSQL</h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-
-            <h5> MySQL</h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-
-            <h5> MongoDB</h5>
-            <div class="skill-bar">
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-on"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-              <div class="skill-rate-off"></div>
-            </div>
-          </div>
-
-
-        </div><!-- .col-md-3 -->
-
-
-        <div class="col-md-3 col-sm-12 wow bounceInRight">
-          <h3>Perfil Profesional</h3>
-          <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like
-            mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was
-            created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of
-            existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I
-            am so happy, my dear friend.</p>
-
-
-        </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Profile section end -->
-
-  <!-- Callout section start -->
-
-  <section id="stats" class="callout">
-
+    </div>
+</div>
+<!--portfolio ends!-->
+<!--blog-->
+<div id="blog" class="single-section blog-area parallax_img">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-3 col-sm-12 hidden-xs wow bounceInLeft">
-          <h3>Mi Estatus</h3>
-        </div>
-
-        <div class="col-md-3 col-sm-4 wow bounceInDown">
-          <div class="stat">
-            <div class="stat-icon">
-              <h2><i class="fa fa-coffee hidden-xs"></i><span class="timer" data-to="36"></span></h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2 class="section-title">Blog</h2>
+                    <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ratione!
+                    </p>
+                </div>
             </div>
-            <h3>Desveladas</h3>
-          </div>
         </div>
-
-        <div class="col-md-3 col-sm-4 wow bounceInUp">
-          <div class="stat">
-            <div class="stat-icon">
-              <h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="10000"></span>+</h2>
+        <div class="row">
+            <div class="col-12">
+                <!--blog carousel-->
+                <div class="owl-carousel blog-carousel">
+                    <!--blog item-->
+                    <div class="blog-item">
+                        <div class="category">News</div>
+                        <div class="img-item">
+                            <img src="images/blog-01.jpg" alt=""/>
+                        </div>
+                        <div class="blog-text">
+                            <div class="text-title">
+                                <div class="date">Aug 13, 2018</div>
+                                <a href="#0">
+                                    <h3>How subscription business with user analytics</h3>
+                                </a>
+                                <p>Will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--blog item ends!-->
+                    <!--blog item-->
+                    <div class="blog-item">
+                        <div class="category">News</div>
+                        <div class="img-item">
+                            <img src="images/blog-02.jpg" alt=""/>
+                        </div>
+                        <div class="blog-text">
+                            <div class="text-title">
+                                <div class="date">Aug 13, 2018</div>
+                                <a href="#0">
+                                    <h3>The benefits of a DevOps Approach</h3>
+                                </a>
+                                <p>Will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--blog item ends!-->
+                    <!--blog item-->
+                    <div class="blog-item">
+                        <div class="category">News</div>
+                        <div class="img-item">
+                            <img src="images/blog-03.jpg" alt=""/>
+                        </div>
+                        <div class="blog-text">
+                            <div class="text-title">
+                                <div class="date">Aug 13, 2018</div>
+                                <a href="#0">
+                                    <h3>What is DevOps and why does it matter?</h3>
+                                </a>
+                                <p>Will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--blog item ends!-->
+                    <!--blog item-->
+                    <div class="blog-item">
+                        <div class="category">Brands</div>
+                        <div class="img-item">
+                            <img src="images/blog-04.jpg" alt=""/>
+                        </div>
+                        <div class="blog-text">
+                            <div class="text-title">
+                                <div class="date">Aug 13, 2018</div>
+                                <a href="#0">
+                                    <h3>The benefits of a DevOps Approach</h3>
+                                </a>
+                                <p>Will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--blog item ends!-->
+                </div>
+                <!--blog carousel-->
             </div>
-            <h3>Lineas de código</h3>
-          </div>
         </div>
-
-        <div class="col-md-3 col-sm-4 wow bounceInRight">
-          <div class="stat">
-            <div class="stat-icon">
-              <h2><i class="fa fa-child hidden-xs"></i><span class="timer" data-to="10"></span>+</h2>
-            </div>
-            <h3>Desarrollos</h3>
-          </div>
-        </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Callout section end -->
-
-  <!-- Services section start -->
-
-  <section id="services" class="section">
-
+    </div>
+</div>
+<!--blog ends!-->
+<!--Get a Quote-->
+<div id="quote" class="single-section silver-bg quote-area">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12 headline wow bounceInDown">
-          <h2>Lo que me gusta hacer! </h2>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 m-auto">
+                <div class="section-heading ">
+                    <h2 class="section-title">Have a project on Mind? </h2>
+                    <p>Libero ipsam numquam quos minus at corporis illum, reiciendis aliquam ut non dolor. Optio
+                        provident numquam
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <div class="col-md-12">
-
-          <div class="row">
-
-            <div class="col-sm-4 wow bounceInLeft">
-              <div class="service">
-                <div class="icon">
-                  <i class="fa fa-newspaper-o"></i>
-                </div>
-                <h4>Sitios Web/ Paginas Personales</h4>
-                <div class="text">
-                  <!--<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>-->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 wow bounceInUp">
-              <div class="service">
-                <div class="icon">
-                  <i class="fa fa-calculator"></i>
-                </div>
-                <h4>Aplicaciones Web</h4>
-                <div class="text">
-                  <!--<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>-->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 wow bounceInRight">
-              <div class="service">
-                <div class="icon">
-                  <i class="fa fa-cog"></i>
-                </div>
-                <h4>Automatización de Tareas</h4>
-                <div class="text">
-                  <!--<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>-->
-                </div>
-              </div>
-            </div>
-
-          </div><!-- .row -->
-
-          <div class="row">
-
-            <div class="col-sm-4 wow bounceInUp" data-wow-delay=".2s">
-              <div class="service">
-                <div class="icon">
-                  <i class="fa fa-code"></i>
-                </div>
-                <h4>Código Limpio</h4>
-                <div class="text">
-                  <!--<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>-->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 wow bounceInUp" data-wow-delay=".4s">
-              <div class="service">
-                <div class="icon">
-                  <i class="fa fa-desktop"></i>
-                </div>
-                <h4>Diseño Web Adaptable</h4>
-                <div class="text">
-                  <!--<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>-->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
-              <div class="service">
-                <div class="icon">
-                  <i class="fa fa-life-ring"></i>
-                </div>
-                <h4>Soporte</h4>
-                <div class="text">
-                  <!--<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>-->
-                </div>
-              </div>
-            </div>
-
-          </div><!-- .row -->
-
-        </div><!-- .col-md-12 -->
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Services section end -->
-
-  <!-- Callout section start -->
-
-  <section class="callout">
-
+    </div>
+</div>
+<!--Get a Quote ends!-->
+<div class="contact parallax_img">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-3 hidden-xs wow bounceInLeft">
-          <h3>Mi estatus</h3>
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 m-auto">
+                <div class="contact-form">
+                    <div class="section-heading text-center">
+                        <h2 class="section-title">Get a Quote</h2>
+                        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ratione!
+                        </p>
+                    </div>
+                    <form action="php/form.php" method="post" id="validation" class="form-area">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="select-area">
+                                    <select name="project">
+                                        <option value="">What your project need?</option>
+                                        <option value="Custom interface and layout">Custom interface and layout</option>
+                                        <option value="CMS integrations (WordPress)">CMS integrations (WordPress)
+                                        </option>
+                                        <option value="Website design">Website design</option>
+                                        <option value="Seo optimization">SEO optimization</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-area">
+                                    <input name="name" type="text" required>
+                                    <label class="floating-label">Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-area">
+                                    <input name="email" type="email" required>
+                                    <label class="floating-label">Email*</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-area">
+                                    <input name="company" type="text" required>
+                                    <label class="floating-label">Company Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-area">
+                                    <input name="phone" type="tel" required>
+                                    <label class="floating-label">Phone*</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="select-area">
+                                    <select name="budget">
+                                        <option value="">What is your budget?</option>
+                                        <option value="under $500">My budget is under $500</option>
+                                        <option value="$500 to $1000">My budget is between $500 to $1000</option>
+                                        <option value="$1000 to $1500">My budget is between $1000 to $1500</option>
+                                        <option value="over $1500">My budget is over $1500</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-area">
+                                    <textarea name="message" rows="6" required></textarea>
+                                    <label class="floating-label">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button name="submit" type="submit" class="btn button-scheme">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <div class="col-md-9 headline nomargin wow bounceInDown">
-          <h3>Actualmente trabajando en SOSAFE.</h3>
-          <p>...</p>
-          <a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i
-              class="fa fa-paper-plane-o icon-before"></i> Contáctame</a>
+        <div class="row">
+            <!--Call us   -->
+            <div class="col-lg-8 col-sm-12 m-auto">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 contact-info">
+                        <div class="icon-box"><span class="icon-phone"></span></div>
+                        <h3>Call me</h3>
+                        <ul>
+                            <li>(56) 940 866 411</li>
+                        </ul>
+                    </div>
+                    <!--Email us-->
+                    <div class="col-12 col-md-6 col-lg-4 contact-info">
+                        <div class="icon-box"><span class="icon-mail"></span></div>
+                        <h3>Email me</h3>
+                        <ul>
+                            <li>aljomori@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!--Address-->
+                    <div class="col-12 col-md-12 col-lg-4 contact-info">
+                        <div class="icon-box"><span class="icon-location"></span></div>
+                        <h3>Address</h3>
+                        <ul>
+                            <li>Santiago, Chile</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Callout section end -->
-
-  <!-- Resume section start -->
-
-  <section id="resume" class="section">
-
+    </div>
+</div>
+<!--footer-->
+<footer class="single-section">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12 headline wow bounceInDown">
-          <h2>Resumen</h2>
-          <p>Mi educación y experiencia.</p>
-        </div>
-
-      </div><!-- .row -->
-
-      <div class="row resume-items">
-
-        <div class="col-md-3 wow bounceInLeft">
-          <h3>Educación</h3>
-        </div>
-
-
-        <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
-          <h4>TSU informatica</h4>
-          <p>Tecnico Superior Universitario graduado de la Universidad Politecnica Territorial de los Altos Mirandinos
-            Cecilio Acosta.</p>
-          <hr class="hidden-xs">
-        </div>
-
-        <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-          <h4><i class="fa fa-graduation-cap"></i> UPTAMCA</h4>
-          <i class="fa fa-calendar"></i> 2009 - 2012
-          <hr class="visible-xs">
-        </div>
-
-      </div><!-- .row -->
-
-      <div class="row resume-items">
-
-        <div class="col-md-3 wow bounceInLeft">
-          <h3>Experiencia</h3>
-        </div>
-
-        <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
-          <h4>Desarrollador Web Freelance</h4>
-          <p>Desarrollo de sitios web estaticos y dinamicos con BackEnd en PHP, generalmente para estudiantes y empresas
-            pequeñas.</p>
-          <hr class="hidden-xs">
-        </div>
-
-        <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-          <h4><i class="fa fa-home"></i> HOME </h4>
-          <i class="fa fa-calendar"></i> 2012-2013
-          <hr class="visible-xs">
-        </div>
-
-        <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
-          <h4>Desarrollador Full Stack</h4>
-          <p> Desarrollo aplicaciones web tales como el sistema de gestion escolar GESCOLAR (<a
-              href="http://gescolar.me.gob.ve">gescolar.me.gob.ve</a>), Sistema de gestion operativa del PAE (<a
-              href="http://gopae.me.gob.ve">gopae.me.gob.ve</a>) , liderazgo tecnico en el sistema de tramites y citas
-            del MPPE (Ministerio del poder popular para la educación), entre otros proyectos. </p>
-          <hr class="hidden-xs">
-        </div>
-
-        <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-          <h4><i class="fa fa-building"></i> MPPE / CANTV </h4>
-          <i class="fa fa-calendar"></i> 2013-2015
-          <hr class="visible-xs">
-        </div>
-
-
-        <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
-          <h4>Desarrollador Full Stack SSr</h4>
-          <p> Desarrollo aplicaciónes web tales como Moodaway (www.moodaway.com) y
-            sitios webs con el CMS Drupal 7.
-          </p>
-          <hr class="hidden-xs">
-        </div>
-
-        <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-          <h4><i class="fa fa-building"></i> Teravision </h4>
-          <i class="fa fa-calendar"></i> 2015-2016
-          <hr class="visible-xs">
-        </div>
-
-        <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
-          <h4>Desarrollador Full Stack SSr</h4>
-          <p> Desarrollo aplicaciones web tales como el sistema de
-            retención de clientes para la compañia Canadiense COGECO, App administrativa para el web site MAXCAR
-            (http://maxcar.com.ve/admin)
-            Sitios web tales como (<a href="http://stepstojustice.ca/">http://stepstojustice.ca/</a> , <a
-                href="http://maxcar.com.ve/">http://maxcar.com.ve/</a>) y widgets.
-          </p>
-          <hr class="hidden-xs">
-        </div>
-
-        <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-          <h4><i class="fa fa-building"></i> BlancLabs </h4>
-          <i class="fa fa-calendar"></i> 2016-2017
-          <hr class="visible-xs">
-        </div>
-
-      </div><!-- .row -->
-
-      <div class="row">
-
-        <div class="col-md-6 col-md-offset-3 wow bounceInUp">
-          <a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Descargar CV</a>
-        </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Resume section end -->
-
-  <!-- Callout section start -->
-
-  <section id="clients" class="callout">
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-3 hidden-xs wow bounceInLeft">
-          <h3>Clientes</h3>
-        </div>
-
-        <div class="col-md-9 wow bounceInRight">
-
-          <div id="owl-clients" class="owl-carousel">
-
-            <div class="owl-item">
-              <div class="owl-item">
-                <img src="images/logo/client-cantv.png" alt="">
-                <h4></h4>
-              </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center text-center align-self-center">
+                <ul class="footer-social">
+                    <li><a href="https://github.com/aljomori" target="_blank" title="Github"> <i class="fab fa-github"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/alexis-jos%C3%A9-moreno-rivas-809645a8/" target="_blank" title="LinkedIn"> <i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <h6 class="copy-txt">Copyright © 2023 Alexis Moreno.</h6>
             </div>
-
-            <div class="owl-item">
-              <div class="owl-item">
-                <img src="images/logo/client-tera.png" alt="">
-                <h4></h4>
-              </div>
-            </div>
-
-            <div class="owl-item">
-              <div class="owl-item ">
-                <img src="images/logo/client-blanc.png" alt="">
-                <h4></h4>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div><!-- .col-md-9 -->
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Callout section end -->
-
-  <!-- Portfolio section start -->
-
-  <section id="portfolio" class="section">
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12 headline wow bounceInDown">
-          <h2>Portafolio</h2>
-          <p>Mis Mejores Trabajos.</p>
         </div>
+    </div>
+</footer>
+<!--footer ends!-->
 
-        <div class="col-md-4 col-sm-6 wow bounceInLeft">
-          <a href="http://www.moodaway.com/" target="_blank" title="Moodaway">
-            <div class="portfolio-item">
-              <div class="portfolio-item-preview">
-                <img src="images/portfolio/moodaway.png" alt="">
-              </div>
-              <div class="portfolio-item-description">
-                <h3>Moodaway</h3>
-                <p>Red Social</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-sm-6 wow bounceInLeft">
-          <a href="http://maxcar.com.ve/" target="_blank" title="MaxCar">
-            <div class="portfolio-item">
-              <div class="portfolio-item-preview">
-                <img src="images/portfolio/maxcar.png" alt="">
-              </div>
-              <div class="portfolio-item-description">
-                <h3>MAXCAR</h3>
-                <p>Venta de Autos</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-sm-6 wow bounceInLeft">
-          <a href="https://hidden-coast-82327.herokuapp.com/" target="_blank" title="Marvel">
-            <div class="portfolio-item">
-              <div class="portfolio-item-preview">
-                <img src="images/portfolio/marvel.png" alt="">
-              </div>
-              <div class="portfolio-item-description">
-                <h3>Marvel</h3>
-                <p>Catalogo</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Portfolio section end -->
-
-  <!-- Contact section start -->
-
-  <section id="contact" class="section">
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12 headline wow bounceInLeft">
-          <h2>Contáctame</h2>
-          <p>Déjame tu mensaje o llamame. Y prontamente te respondere.</p>
-        </div>
-
-        <div class="col-md-6 wow bounceInUp">
-
-          <ul class="icon-list">
-            <li><i class="fa fa-fw fa-map-marker"></i>San Diego 255, Santiago, Chile</li>
-            <li><i class="fa fa-fw fa-mobile"></i>+56 940 866 411</li>
-            <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:aljomori@gmail.com">aljomori@gmail.com</a></li>
-            <li><i class="fa fa-fw fa-globe"></i><a href="#">http://aljomori.github.io</a></li>
-          </ul>
-
-        </div>
-
-        <div class="col-md-6 wow bounceInRight">
-
-          <form id="contact-form" role="form">
-
-            <div class="form-group">
-              <label class="sr-only" for="c_name">Nombre</label>
-              <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Nombre">
-            </div>
-
-            <div class="form-group">
-              <label class="sr-only" for="c_email">Correo Electronico</label>
-              <input type="email" id="c_email" class="form-control" name="c_email" placeholder="Correo Electronico">
-            </div>
-
-            <div class="form-group">
-              <textarea class="form-control" id="c_message" name="c_message" rows="7"
-                        placeholder="Tu mensaje"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-custom-1">
-              <i class="fa fa-bullhorn icon-before"></i> Enviar
-            </button>
-
-          </form>
-
-          <div class="ajax-response"></div>
-
-        </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Contact section end -->
-
-  <!-- Footer start -->
-
-  <footer id="footer">
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12">
-          <p class="copy">
-            © 2017 Alexis Moreno.
-          </p>
-        </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </footer>
-
-  <!-- Footer end -->
-
-</div><!-- .wrapper -->
-
-<!-- Javascript files -->
-<!-- jQuery -->
-<script src="js/jquery-1.11.0.min.js"></script>
+</div>
+<!--Right side wrap ends!-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.3.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Bootstrap JS -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- Background slider -->
-<script src="js/jquery.backstretch.min.js"></script>
-<!-- OwlCarousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- Modal for portfolio -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<!-- Text rotator -->
-<script src="js/jquery.simple-text-rotator.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.js"></script>
-<!-- CountTo  -->
-<script src="js/jquery.countTo.js"></script>
-<!-- WOW - Reveal Animations When You Scroll -->
-<script src="js/wow.min.js"></script>
-<!-- Smooth scroll -->
-<script src="js/smoothscroll.js"></script>
-<!-- Fitvids -->
-<script src="js/jquery.fitvids.js"></script>
-<!-- Custom scripts -->
+<script src="js/bootstrap.js"></script>
+<!-- Wow js file -->
+<script src="js/wow.js"></script>
+<!-- core custom js -->
+<script src="js/headline.js"></script>
+<!--isotope-->
+<script src="js/isotope.js"></script>
+<!--lity-->
+<script src="js/lity.js"></script>
+<!--carousel-->
+<script src="js/owl.carousel.js"></script>
+<!--countimator-->
+<script src="js/jquery.countimator.js"></script>
+<!--water effect-->
+<script src="js/jquery.ripples.js"></script>
+<!--form validation-->
+<script src="js/jquery.validate.js"></script>
+<!--ajax form-->
+<script src="js/jquery.form.js"></script>
+<!--Sweet Alert-->
+<script src="js/sweetalert.js"></script>
+<!-- core custom js -->
 <script src="js/custom.js"></script>
-
 </body>
 </html>

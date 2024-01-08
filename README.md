@@ -1,1 +1,0 @@
-# aljomori.github.io
