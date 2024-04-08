@@ -340,7 +340,7 @@ h5.subtitle {
 .home-area {
     height: 100vh;
     min-height: 600px;
-    background: url('../images/banner-01.jpg');
+    background: url('../images/banner-01-removebg.png');
     background-size: cover;
     overflow: hidden;
     position: relative;
