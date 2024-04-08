@@ -1552,6 +1552,9 @@ footer .copy-txt {
         margin: 0 auto;
         text-align: center;
     }
+    .home-area {
+        background: none;
+    }
 
     .home-area .greet,
     .home-area .greet strong {
