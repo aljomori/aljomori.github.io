@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Welcome",
+    "about": "About Me",
+    "experience": "Experience"
+  },
+  "home": {
+    "greet": "Hello, my name is",
+    "headlinePrefix": "I'm a",
+    "description": "I'm a Software Engineer with extensive experience for over ~{{years}} years with back-end development and a specialization in front-end solutions across web apps, mobile apps, and cross-platform desktop clients, I focus on efficiency and maintainability.",
+    "contactMe": "Contact me"
+  },  
+  "headline": {
+    "engineer": "Engineer",
+    "architect": "Architect",
+    "developer": "Developer"
+  },
+  "about": {
+    "title": "About Me",
+    "role": "I am a Software Engineer",
+    "paragraph1": "As a Software Developer with over a decade of experience, I have specialized in developing user interfaces, including web, mobile, and desktop applications, with a particular focus on JavaScript. Additionally, I possess solid experience in backend development, working with a variety of languages and frameworks such as Go, NodeJS, C#, PHP, Serverless.",
+    "paragraph2": "My approach is grounded in the fundamental worth of products, prioritizing user experience, the significance of features, and the efficiency of delivery, firmly believing these elements outweigh others. I understand the difficulties of managing a project that started with developmental shortcomings, therefore, I'm always seeking the ideal equilibrium between swift goal realization and upholding superior code quality.",
+    "paragraph3": "I see myself as genuinely kind and empathetic, valuing a light and pleasant work environment. Humor, for me, is essential in building a comfortable and collaborative space. Through experience, I've come to appreciate the importance of attention to detail, believing it's crucial for crafting successful products.",
+    "name": "Name",
+    "email": "Email",
+    "age": "Age",
+    "from": "From",
+    "resume": "Resume",
+    "experience": "Experience"
+  },
+  "experience": {
+    "subtitle": "Having {{years}} years Experience",
+    "title": "Amazing",
+    "titleHighlight": "experience",
+    "titleSuffix": "with those companies",
+    "description": "My professional journey spans a wide spectrum, from organizations and studios to dynamic startups, where I have significantly contributed with my technical skills, team leadership, and strategic product design.",
+    "contactMe": "Contact Me"
+  },
+  "quote": {
+    "title": "Have a project on Mind?",
+    "description": "You're in the right place. With over ten years of experience in software development, specializing in user interfaces and well-versed in backend, I'm ready to elevate your ideas to the next level. Let's work together to turn your vision into a successful reality."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Ready to turn your ideas into reality? Reach out for expert advice and innovative solutions tailored to your project needs. Let's create something great together!",
+    "sendMessage": "Send Message",
+    "callMe": "Call me",
+    "emailMe": "Email me",
+    "address": "Address"
+  },
+  "footer": {
+    "copyright": "Copyright © {{year}}"
+  }
+}

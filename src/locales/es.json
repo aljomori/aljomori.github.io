@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Bienvenido",
+    "about": "Sobre mí",
+    "experience": "Experiencia"
+  },
+  "home": {
+    "greet": "Hola, mi nombre es",
+    "headlinePrefix": "Soy",
+    "description": "Soy Ingeniero de Software con más de ~{{years}} años de experiencia en desarrollo back-end y especialización en soluciones front-end para aplicaciones web, móviles y clientes de escritorio multiplataforma. Me enfoco en la eficiencia y mantenibilidad.",
+    "contactMe": "Contáctame"
+  },
+  "headline": {
+    "engineer": "Ingeniero",
+    "architect": "Arquitecto",
+    "developer": "Desarrollador"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "role": "Soy Ingeniero de Software",
+    "paragraph1": "Como Desarrollador de Software con más de una década de experiencia, me he especializado en interfaces de usuario para web, móvil y aplicaciones de escritorio, con un enfoque particular en JavaScript. Además, poseo sólida experiencia en desarrollo backend, trabajando con diversos lenguajes y frameworks como Go, NodeJS, C#, PHP y Serverless.",
+    "paragraph2": "Mi enfoque se basa en el valor fundamental de los productos, priorizando la experiencia del usuario, la relevancia de las funcionalidades y la eficiencia en la entrega, convencido de que estos elementos superan a otros. Entiendo las dificultades de gestionar un proyecto que comenzó con deficiencias de desarrollo, por eso busco siempre el equilibrio ideal entre alcanzar objetivos rápidamente y mantener una calidad de código superior.",
+    "paragraph3": "Me considero genuinamente amable y empático, valorando un ambiente de trabajo ligero y agradable. El humor, para mí, es esencial para crear un espacio cómodo y colaborativo. A través de la experiencia, he aprendido a apreciar la importancia del detalle, convencido de que es crucial para crear productos exitosos.",
+    "name": "Nombre",
+    "email": "Email",
+    "age": "Edad",
+    "from": "Ubicación",
+    "resume": "Currículum",
+    "experience": "Experiencia"
+  },
+  "experience": {
+    "subtitle": "Con {{years}} años de experiencia",
+    "title": "Increíble",
+    "titleHighlight": "experiencia",
+    "titleSuffix": "con estas empresas",
+    "description": "Mi trayectoria profesional abarca un amplio espectro, desde organizaciones y estudios hasta startups dinámicas, donde he contribuido significativamente con mis habilidades técnicas, liderazgo de equipos y diseño estratégico de productos.",
+    "contactMe": "Contáctame"
+  },
+  "quote": {
+    "title": "¿Tienes un proyecto en mente?",
+    "description": "Estás en el lugar correcto. Con más de diez años de experiencia en desarrollo de software, especializado en interfaces de usuario y con sólidos conocimientos en backend, estoy listo para llevar tus ideas al siguiente nivel. Trabajemos juntos para convertir tu visión en una realidad exitosa."
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "¿Listo para convertir tus ideas en realidad? Ponte en contacto para recibir asesoría experta y soluciones innovadoras adaptadas a las necesidades de tu proyecto. ¡Creemos algo grande juntos!",
+    "sendMessage": "Enviar mensaje",
+    "callMe": "Llámame",
+    "emailMe": "Escríbeme",
+    "address": "Dirección"
+  },
+  "footer": {
+    "copyright": "Copyright © {{year}}"
+  }
+}
