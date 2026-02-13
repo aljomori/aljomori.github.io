@@ -65,6 +65,15 @@ export function Sidebar({ scrollTo, activeSection }: SidebarProps) {
                       <span className="icon-dashboard-speed-streamline"></span> {t('nav.experience')}
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="#tech"
+                      className={`scroll ${activeSection === 'tech' ? 'active' : ''}`}
+                      onClick={(e) => { e.preventDefault(); scrollTo('tech') }}
+                    >
+                      <span className="icon-settings-streamline"></span> {t('nav.tech')}
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

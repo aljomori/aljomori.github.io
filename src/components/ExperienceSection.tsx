@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { EXPERIENCE, getYearsOfExperience } from '../constants'
+import { EXPERIENCE_DETAILED, getYearsOfExperience } from '../constants'
 
 interface ExperienceSectionProps {
   scrollTo: (section: string) => void
@@ -7,6 +7,7 @@ interface ExperienceSectionProps {
 
 export function ExperienceSection({ scrollTo }: ExperienceSectionProps) {
   const { t } = useTranslation()
+
   return (
     <section id="experience" className="single-section silver-bg experience-area">
       <div className="container">
@@ -24,16 +25,36 @@ export function ExperienceSection({ scrollTo }: ExperienceSectionProps) {
             </div>
           </div>
           <div className="col-lg-7 col-sm-12">
-            <div className="row">
-              {EXPERIENCE.map(({ company, period, logo }) => (
-                <div key={company} className="col-sm-6 col-md-6">
-                  <div className="exp-block">
-                    <img className="img-icon" width={80} height={80} src={logo} alt={company} />
-                    <h3>{company}</h3>
-                    <p className="exp-period">{period}</p>
+            <div className="experience-timeline">
+              {EXPERIENCE_DETAILED.map((item, index) => {
+                const hint = t(`experience.hints.${item.hintKey}`)
+                return (
+                  <div key={item.company} className="timeline-item">
+                    <div className="timeline-marker">
+                      <div className="timeline-dot-wrapper">
+                        <div className="timeline-dot">
+                          <img className="timeline-logo" src={item.logo} alt={item.company} />
+                        </div>
+                        <span className="timeline-year">{index === 0 ? t('experience.present') : item.year}</span>
+                      </div>
+                      {index < EXPERIENCE_DETAILED.length - 1 && <div className="timeline-line" />}
+                    </div>
+                    <div className="timeline-content">
+                      <div className="timeline-header">
+                        <h3>{item.company}</h3>
+                        <p className="timeline-role">{item.role}</p>
+                        <p className="timeline-period">{item.period}</p>
+                      </div>
+                      {hint && <p className="timeline-hint">{hint}</p>}
+                      <ul className="timeline-responsibilities">
+                        {item.responsibilities.map((resp, i) => (
+                          <li key={i}>{resp}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </div>
         </div>

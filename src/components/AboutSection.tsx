@@ -1,5 +1,7 @@
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
+import { getCVData, getCVLangCode } from '../data/cvData'
+import { generateCVPDF } from '../utils/generateCVPDF'
 
 function getAge(birthDate: Date): number {
   const today = new Date()
@@ -17,7 +19,7 @@ interface AboutSectionProps {
 const BIRTH_DATE = new Date(1994, 1, 9) // 9 de febrero de 1994 (mes 0-indexed)
 
 export function AboutSection({ scrollTo }: AboutSectionProps) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const age = useMemo(() => getAge(BIRTH_DATE), [])
   return (
     <section id="about" className="single-section about-area">
@@ -59,11 +61,13 @@ export function AboutSection({ scrollTo }: AboutSectionProps) {
                 </li>
               </ul>
               <a
-                href="https://aljomori-files.s3.amazonaws.com/CV_2024_ENGLISH.pdf"
-                download
-                target="_blank"
-                rel="noreferrer"
+                href="#"
                 className="btn button-scheme"
+                onClick={(e) => {
+                  e.preventDefault()
+                  const lang = i18n.language
+                  generateCVPDF(getCVData(lang), getCVLangCode(lang))
+                }}
               >
                 {t('about.resume')}
               </a>

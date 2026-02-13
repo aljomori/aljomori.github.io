@@ -5,6 +5,7 @@ import { Sidebar } from './components/Sidebar'
 import { HomeSection } from './components/HomeSection'
 import { AboutSection } from './components/AboutSection'
 import { ExperienceSection } from './components/ExperienceSection'
+import { TechSection } from './components/TechSection'
 import { QuoteSection } from './components/QuoteSection'
 import { ContactSection } from './components/ContactSection'
 import { Footer } from './components/Footer'
@@ -29,6 +30,7 @@ function App() {
         <HomeSection scrollTo={scrollTo} />
         <AboutSection scrollTo={scrollTo} />
         <ExperienceSection scrollTo={scrollTo} />
+        <TechSection scrollTo={scrollTo} />
         <QuoteSection />
         <ContactSection />
         <Footer />
