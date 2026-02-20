@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { LanguageSelector } from './LanguageSelector'
+import { ThemeToggle } from './ThemeToggle'
 
 interface SidebarProps {
   scrollTo: (section: string) => void
@@ -20,7 +21,10 @@ export function Sidebar({ scrollTo, activeSection }: SidebarProps) {
               <div className="caption-area">
                 <p className="name">Alexis Moreno</p>
               </div>
-              <LanguageSelector />
+              <div className="header-actions">
+                <ThemeToggle />
+                <LanguageSelector />
+              </div>
             </div>
             <button
               className="navbar-toggler"

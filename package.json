@@ -11,6 +11,7 @@
     "deploy": "npm run build && npx gh-pages -d dist"
   },
   "dependencies": {
+    "docx": "^9.5.3",
     "i18next": "^25.8.6",
     "i18next-browser-languagedetector": "^8.2.1",
     "jspdf": "^4.1.0",

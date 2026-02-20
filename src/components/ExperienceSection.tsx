@@ -12,7 +12,7 @@ export function ExperienceSection({ scrollTo }: ExperienceSectionProps) {
     <section id="experience" className="single-section silver-bg experience-area">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5 col-sm-12">
+          <div className="col-md-12">
             <div className="exp-content">
               <p className="subtitle">{t('experience.subtitle', { years: getYearsOfExperience() })}</p>
               <h2>
@@ -24,7 +24,9 @@ export function ExperienceSection({ scrollTo }: ExperienceSectionProps) {
               </a>
             </div>
           </div>
-          <div className="col-lg-7 col-sm-12">
+        </div>
+        <div className="row">
+          <div className="col-md-12">
             <div className="experience-timeline">
               {EXPERIENCE_DETAILED.map((item, index) => {
                 const hint = t(`experience.hints.${item.hintKey}`)
@@ -47,8 +49,8 @@ export function ExperienceSection({ scrollTo }: ExperienceSectionProps) {
                       </div>
                       {hint && <p className="timeline-hint">{hint}</p>}
                       <ul className="timeline-responsibilities">
-                        {item.responsibilities.map((resp, i) => (
-                          <li key={i}>{resp}</li>
+                        {item.responsibilityKeys.map((key) => (
+                          <li key={key}>{t(`experience.responsibilities.${item.hintKey}.${key}`)}</li>
                         ))}
                       </ul>
                     </div>

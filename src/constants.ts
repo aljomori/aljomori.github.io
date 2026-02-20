@@ -9,13 +9,14 @@ export interface ExperienceItem {
   period: string
   logo: string
   role: string
-  responsibilities: string[]
+  /** Keys for i18n: experience.responsibilities.{hintKey}.{index} */
+  responsibilityKeys: string[]
   hintKey: string
 }
 
 export const EXPERIENCE = [
   { company: 'Gala Games', period: '2024', logo: '/images/gala.png' },
-  { company: 'Forte Inc', period: '2020-24', logo: '/images/forte.jpeg' },
+  { company: 'Forte Inc', period: '2022-24', logo: '/images/forte.jpeg' },
   { company: 'Networks', period: '2020-22', logo: '/images/n3twork.jpeg' },
   { company: 'SOSAFE', period: '2017-20', logo: '/images/sosafe.jpeg' },
   { company: 'BlancLink', period: '2016-17', logo: '/images/blanclabsLogo.png' },
@@ -31,25 +32,16 @@ export const EXPERIENCE_DETAILED: ExperienceItem[] = [
     logo: '/images/gala.png',
     role: 'Backend Engineer',
     hintKey: 'galaGames',
-    responsibilities: [
-      'Leading frontend development team building Telegram WebApps using TypeScript, Node.js (Express), and MongoDB',
-      'Developed a domain-specific language (DSL) in Golang to define and generate metadata schemas dynamically',
-      'Maintain metadata distribution system in Python',
-    ],
+    responsibilityKeys: ['0', '1', '2'],
   },
   {
     company: 'Forte Inc',
-    year: '2020',
-    period: '2020 - 2024',
+    year: '2022',
+    period: '2022 - 2024',
     logo: '/images/forte.jpeg',
     role: 'Software Engineer',
     hintKey: 'forte',
-    responsibilities: [
-      'Designed, implemented and maintained tools and protocols for a console platform enhancing team collaboration',
-      'Designed custom Micro-frontend architecture using Module Federation',
-      'Used GitHub Actions and AWS Terraform to optimize development workflows',
-      'Developed custom JavaScript libraries and UI component libraries',
-    ],
+    responsibilityKeys: ['0', '1', '2', '3'],
   },
   {
     company: 'Networks',
@@ -58,11 +50,7 @@ export const EXPERIENCE_DETAILED: ExperienceItem[] = [
     logo: '/images/n3twork.jpeg',
     role: 'Software Engineer',
     hintKey: 'networks',
-    responsibilities: [
-      'Contributed to platform for managing mobile video game operations (React, Redux, RxJS, Thrift, Material UI)',
-      'Built strategies for in-app notifications and targeted advertising',
-      'Implemented Nx Micro-frontend architecture to unify multiple clients into one Console Platform',
-    ],
+    responsibilityKeys: ['0', '1', '2'],
   },
   {
     company: 'SOSAFE',
@@ -71,11 +59,7 @@ export const EXPERIENCE_DETAILED: ExperienceItem[] = [
     logo: '/images/sosafe.jpeg',
     role: 'Frontend Developer',
     hintKey: 'sosafe',
-    responsibilities: [
-      'Led frontend development of real-time event monitoring platform (PWA, React, Redux)',
-      'Developed SOSAFE GO (React Native hybrid mobile app)',
-      'Built static sites, embedded JS widgets, and in-app notification templates',
-    ],
+    responsibilityKeys: ['0', '1', '2'],
   },
   {
     company: 'BlancLink',
@@ -84,11 +68,7 @@ export const EXPERIENCE_DETAILED: ExperienceItem[] = [
     logo: '/images/blanclabsLogo.png',
     role: 'Fullstack Developer',
     hintKey: 'blanclink',
-    responsibilities: [
-      'Worked with remote team in Oregon',
-      'Created embedded JS widgets',
-      'Built car sales web app using MEAN stack',
-    ],
+    responsibilityKeys: ['0', '1', '2'],
   },
   {
     company: 'Teravision',
@@ -97,10 +77,7 @@ export const EXPERIENCE_DETAILED: ExperienceItem[] = [
     logo: '/images/teravisionLogo.png',
     role: 'Fullstack Developer',
     hintKey: 'teravision',
-    responsibilities: [
-      'Worked on projects using AngularJS, PHP + Drupal, and Node + Express',
-      'Built CMS-based websites with Drupal',
-    ],
+    responsibilityKeys: ['0', '1'],
   },
   {
     company: 'Cantv',
@@ -109,15 +86,20 @@ export const EXPERIENCE_DETAILED: ExperienceItem[] = [
     logo: '/images/cantvlogo.png',
     role: 'Fullstack Developer',
     hintKey: 'cantv',
-    responsibilities: [
-      'Technical lead for HR internal system (MEAN stack)',
-      'Developed information feed and appointment management system',
-      'Maintained internal PHP (Yii) products',
-    ],
+    responsibilityKeys: ['0', '1', '2'],
   },
 ]
 
 export const WHATSAPP_URL = 'https://wa.me/+56940866411?text=Hola%2C%20encontr%C3%A9%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20productos/servicios.%20Tengo%20algunas%20preguntas%20y%20estoy%20interesado%28a%29%20en%20saber%20m%C3%A1s.%20%C2%A1Gracias%21'
+
+export const CONTACT = {
+  phone: '+56 940 866 411',
+  phoneTel: 'tel:+56940866411',
+  email: 'aljomori@gmail.com',
+  emailMailto: 'mailto:aljomori@gmail.com',
+  address: 'Santiago, Chile',
+  addressMaps: 'https://www.google.com/maps/search/?api=1&query=Santiago,+Chile',
+} as const
 
 /** Tech item with name, URL and logo (Simple Icons slug or custom path) */
 export interface TechItem {
@@ -394,20 +376,20 @@ export const CV = {
     { "name": "Bun", "level": 3, "tags": ["backend", "web"] },
     { "name": "Yii", "level": 2, "tags": ["backend", "web"] },
     { "name": "Drupal", "level": 2, "tags": ["backend", "web"] },
-    { "name": "Thrift", "level": 3, "tags": ["backend", "api"] },
-    { "name": "gRPC", "level": 3, "tags": ["backend", "api"] },
+    { "name": "Thrift", "level": 3, "tags": ["backend", "api", "frontend"] },
+    { "name": "gRPC", "level": 3, "tags": ["backend", "api", "frontend"] },
     { "name": "REST APIs", "level": 4, "tags": ["backend", "api"] },
     { "name": "GraphQL", "level": 2, "tags": ["backend", "api"] },
-    { "name": "MongoDB", "level": 2, "tags": ["database"] },
-    { "name": "PostgreSQL", "level": 3, "tags": ["database"] },
-    { "name": "MySQL", "level": 2, "tags": ["database"] },
-    { "name": "AWS", "level": 3, "tags": ["cloud"] },
-    { "name": "GCP", "level": 2, "tags": ["cloud"] },
-    { "name": "Serverless", "level": 1, "tags": ["cloud", "backend"] },
-    { "name": "Firebase", "level": 2, "tags": ["cloud", "backend"] },
+    { "name": "MongoDB", "level": 2, "tags": ["database", "backend", "web"] },
+    { "name": "PostgreSQL", "level": 3, "tags": ["database", "backend", "web"] },
+    { "name": "MySQL", "level": 2, "tags": ["database", "backend", "web"] },
+    { "name": "AWS", "level": 3, "tags": ["cloud", "backend", "web"] },
+    { "name": "GCP", "level": 2, "tags": ["cloud", "backend", "web"] },
+    { "name": "Serverless", "level": 1, "tags": ["cloud", "backend", "web"] },
+    { "name": "Firebase", "level": 2, "tags": ["cloud", "backend", "web"] },
     { "name": "Pentaho", "level": 1, "tags": [] },
-    { "name": "WebRTC", "level": 1, "tags": ["web"] },
-    { "name": "WebAssembly", "level": 1, "tags": ["web"] },
+    { "name": "WebRTC", "level": 1, "tags": ["web", "frontend"] },
+    { "name": "WebAssembly", "level": 1, "tags": ["web", "frontend"] },
     { "name": "Scrum", "level": 3, "tags": ["methodology"] },
     { "name": "Kanban", "level": 3, "tags": ["methodology"] },
     { "name": "XP", "level": 4, "tags": ["methodology"] },
@@ -452,7 +434,7 @@ export const CV = {
       "name": "Jean Carlos Garcia Castro",
       "company": "SOSAFE",
       "location": "Santiago, Chile",
-      "role": "Co-founder",
+      "role": "Backend Engineer",
       "linkedIn": "https://www.linkedin.com/in/jean-carlos-garcia-castro/"
     },
     {

@@ -1,0 +1,495 @@
+/**
+ * Theme overrides - applies CSS variables to main elements
+ * Load after style.css and side-menu.css
+ */
+
+/* 1. General */
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+::selection {
+  background: var(--color-selection-bg);
+  color: var(--color-selection-fg);
+}
+a {
+  color: var(--color-primary);
+}
+.btn {
+  background-color: var(--color-bg);
+  border-color: var(--color-bg);
+  color: var(--color-text);
+}
+.btn.button-scheme {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-selection-fg);
+}
+.btn.btn-primary-text {
+  color: var(--color-primary);
+}
+.single-section.silver-bg {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Loader */
+#loader-wrapper {
+  background-color: var(--color-header-bg);
+}
+.world::before {
+  border-top-color: var(--color-primary);
+}
+
+/* Header */
+.header-area {
+  background-color: var(--color-header-bg);
+  border-bottom-color: var(--color-header-border);
+}
+.header-area.fixed {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+}
+.header-area.fixed .menu li a:before {
+  background-color: var(--color-primary);
+}
+.header-area.fixed .menu li a.active,
+.header-area.fixed .menu li a:hover {
+  color: var(--color-primary);
+}
+.header-area.fixed .menu li a {
+  color: var(--color-text);
+}
+
+/* Home section - wave */
+.wave-area::after {
+  background-image: url('/images/wave.png');
+}
+[data-theme="dark"] .wave-area::after {
+  background-image: none;
+  background-color: #1B1D26;
+  -webkit-mask-image: url('/images/wave.png');
+  mask-image: url('/images/wave.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: bottom center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: bottom center;
+}
+
+/* Home section */
+.home-area .greet strong {
+  background: var(--color-section-dark);
+}
+.home-area:before {
+  background-image: var(--color-hero-overlay);
+}
+
+/* About / Experience */
+.exp-content .section-title,
+.exp-content .subtitle,
+.exp-content h3 {
+  color: var(--color-text);
+}
+.exp-content .subtitle {
+  color: var(--color-primary);
+}
+.exp-content .section-description {
+  color: var(--color-text-secondary);
+}
+.timeline-year {
+  color: var(--color-text-secondary);
+}
+.timeline-period {
+  color: var(--color-text-muted);
+}
+.timeline-line {
+  background: linear-gradient(to bottom, var(--color-primary), color-mix(in srgb, var(--color-primary) 30%, transparent));
+}
+.timeline-content {
+  background: var(--color-bg-card);
+}
+.timeline-header h3 {
+  color: var(--color-text);
+}
+.timeline-role {
+  color: var(--color-primary);
+}
+.timeline-hint {
+  color: var(--color-text-secondary);
+}
+.timeline-responsibilities li {
+  color: var(--color-text-secondary);
+}
+.timeline-responsibilities li::before {
+  color: var(--color-primary);
+}
+
+/* Tech section */
+.tech-area {
+  background-color: var(--color-bg);
+}
+.tech-area.silver-bg {
+  background-color: var(--color-bg-secondary);
+}
+.tech-heading .subtitle,
+.tech-heading h2 span {
+  color: var(--color-primary);
+}
+.tech-legend-label,
+.tech-level-info-btn:hover {
+  color: var(--color-text-secondary);
+}
+.tech-level-info-btn {
+  color: var(--color-primary);
+}
+.tech-level-modal {
+  background: var(--color-bg-card);
+}
+.tech-level-modal-header h3 {
+  color: var(--color-text);
+}
+.tech-level-modal-close {
+  color: var(--color-text-secondary);
+}
+.tech-level-modal-close:hover {
+  color: var(--color-primary);
+}
+.tech-legend-item,
+.tech-legend-item span {
+  color: var(--color-text-secondary);
+}
+.tech-category-title {
+  color: var(--color-text);
+}
+.tech-card {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+a.tech-card:hover {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+.tech-tag-icon {
+  color: var(--color-text-muted);
+}
+a.tech-card:hover .tech-tag-icon,
+.tech-card:hover .tech-tag-icon {
+  color: var(--color-primary);
+}
+.tech-level {
+  background: var(--color-border-menu);
+}
+.tech-filter-btn {
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
+  border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
+}
+.tech-filter-btn:hover {
+  background: color-mix(in srgb, var(--color-primary) 6%, transparent);
+  color: var(--color-primary);
+  border-color: color-mix(in srgb, var(--color-primary) 40%, transparent);
+}
+.tech-filter-btn.active {
+  background: var(--color-primary);
+  color: var(--color-selection-fg);
+  border-color: var(--color-primary);
+}
+.tech-category {
+  background: var(--color-bg-card);
+}
+.tech-category-title {
+  border-bottom-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
+}
+
+/* Portfolio (if used) */
+.portfolio-area .works-filter li:before {
+  background-color: var(--color-primary);
+}
+.portfolio-area .works-filter li.tab-active,
+.portfolio-area .works-filter li:hover {
+  color: var(--color-primary);
+}
+
+/* Blog (if used) */
+.blog-item .category {
+  background: var(--color-primary);
+  color: var(--color-selection-fg);
+}
+.blog-item:hover .blog-text .text-title h3 {
+  color: var(--color-primary);
+}
+
+/* Services */
+.services-area .single-service {
+  background-color: var(--color-bg-card);
+}
+.services-area .single-service span {
+  color: var(--color-primary);
+}
+.services-area .service-title {
+  color: var(--color-text);
+}
+.services-area .service-description {
+  color: var(--color-text-secondary);
+}
+
+/* Quote, Contact, Footer */
+.quote-area .section-title,
+.quote-area .section-description,
+.contact-area .section-title,
+.contact-area .section-description {
+  color: var(--color-text);
+}
+.contact-area .single-contact span,
+.contact-info .icon-box {
+  color: var(--color-primary);
+}
+.contact-info h3 {
+  color: var(--color-text);
+}
+.contact-form {
+  background: var(--color-bg-card);
+}
+.form-area input:focus ~ .floating-label,
+.form-area input:not(:focus):valid ~ .floating-label,
+.form-area textarea:focus ~ .floating-label,
+.form-area textarea:not(:focus):valid ~ .floating-label {
+  color: var(--color-primary);
+}
+.form-area .input-area input,
+.form-area .select-area select,
+.form-area .text-area textarea {
+  border-bottom-color: var(--color-input-border);
+  background: transparent;
+  color: var(--color-text);
+}
+.form-area .input-area input:focus,
+.form-area .select-area select:focus,
+.form-area .text-area textarea:focus {
+  border-color: var(--color-primary);
+}
+footer,
+.footer-area {
+  background: var(--color-bg-secondary);
+}
+.footer-about-txt p,
+footer .copy-txt,
+.footer-area .copy-txt {
+  color: var(--color-text-secondary);
+}
+.footer-social li a {
+  color: var(--color-text);
+}
+
+/* Side menu (left sidebar) */
+.left-side-area {
+  background-color: var(--color-bg);
+  border-right-color: var(--color-border);
+}
+.left-side-area::selection {
+  background: var(--color-selection-bg);
+  color: var(--color-selection-fg);
+}
+.header-left-area .side-menu li a {
+  color: var(--color-text);
+  border-left-color: var(--color-bg);
+  border-top-color: var(--color-border-menu);
+}
+.header-left-area .side-menu li a.active,
+.header-left-area .side-menu li a:hover {
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
+  background-color: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+.header-left-area .side-menu li a.active {
+  background-color: color-mix(in srgb, var(--color-primary) 12%, transparent);
+}
+.header-content .image-item img {
+  border-color: var(--color-bg);
+}
+.header-social-icons li a {
+  color: var(--color-text);
+}
+.header-content .name,
+.header-content .designation {
+  color: var(--color-text);
+}
+.navbar .navbar-toggler-icon {
+  color: var(--color-text);
+}
+.left-side-area::-webkit-scrollbar {
+  background: var(--color-bg-tertiary);
+}
+.left-side-area::-webkit-scrollbar-thumb {
+  background: var(--color-border-menu);
+}
+
+/* Language selector dark mode */
+.language-selector-track {
+  background: var(--color-bg-tertiary);
+  border-color: var(--color-border);
+}
+.language-selector-slider {
+  background: var(--color-primary);
+}
+.language-selector-option {
+  color: var(--color-text-secondary);
+}
+.language-selector-option:hover {
+  color: var(--color-text);
+}
+.language-selector-option.active {
+  color: var(--color-selection-fg);
+}
+
+/* Header actions (theme + language) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Shadows - primary color based */
+.header-area.fixed {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+}
+.exp-block {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+}
+.exp-block:hover {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+}
+.timeline-dot {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+}
+.timeline-item:hover .timeline-dot {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+}
+.timeline-content,
+.timeline-content:hover {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+}
+.tech-category {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+}
+.tech-category:hover {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+}
+a.tech-card:hover {
+  -webkit-box-shadow: 0px 4px 20px 0px var(--color-shadow-primary-hover);
+  box-shadow: 0px 4px 20px 0px var(--color-shadow-primary-hover);
+}
+.services-area .single-service {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+}
+.services-area .single-service:hover {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary-hover);
+}
+.contact-form {
+  -webkit-box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+  box-shadow: 0px 5px 35px 0px var(--color-shadow-primary);
+}
+.tech-level-modal {
+  -webkit-box-shadow: 0 20px 60px var(--color-shadow);
+  box-shadow: 0 20px 60px var(--color-shadow);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 20px;
+  margin: 0 20px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.theme-toggle:hover {
+  background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+  transform: scale(1.05);
+}
+.theme-toggle i {
+  color: var(--color-text-secondary);
+  font-size: 20px;
+}
+.theme-toggle:hover i {
+  color: var(--color-primary);
+}
+
+/* WhatsApp button & popup */
+.whatsapp-btn,
+.whatsapp-area .circle-animation {
+  background: var(--color-primary) !important;
+  background-color: var(--color-primary) !important;
+}
+.whatsapp-area .tooltip-content {
+  border-color: var(--color-primary);
+}
+.whatsapp-area .tooltip-content .send-msg,
+.whatsapp-area .form-area .send-btn {
+  background-color: var(--color-primary);
+  color: var(--color-selection-fg);
+  border-color: var(--color-primary);
+}
+.whatsapp-popup input:focus {
+  border-color: var(--color-primary);
+}
+
+/* Resume download dropdown */
+.about-area .resume-dropdown .dropdown-menu {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+}
+.about-area .resume-dropdown .dropdown-item {
+  color: var(--color-text);
+}
+.about-area .resume-dropdown .dropdown-item:hover,
+.about-area .resume-dropdown .dropdown-item:focus {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+
+/* Mobile menu (tablet breakpoint) */
+@media screen and (max-width: 991px) {
+  .menu li a {
+    color: var(--color-text);
+  }
+  .menu li a.active,
+  .menu li a:active,
+  .menu li a:focus,
+  .menu li a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* header-content dark mode on mobile - override side-menu.css white styles */
+@media screen and (max-width: 991px) {
+  [data-theme="dark"] .header-content {
+    background: var(--color-bg) !important;
+  }
+  [data-theme="dark"] .header-content .name,
+  [data-theme="dark"] .header-content .designation {
+    color: var(--color-text) !important;
+  }
+}

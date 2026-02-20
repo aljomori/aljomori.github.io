@@ -1,0 +1,61 @@
+/**
+ * Theme variables - Light (default) and Dark
+ * Light theme matches current portfolio; Dark theme inspired by professional CV styling
+ */
+
+/* Light theme (default) - current portfolio colors */
+:root,
+[data-theme="light"] {
+  --color-primary: #249076;
+  --color-primary-hover: #1e7560;
+  --color-text: #242732;
+  --color-text-secondary: #5a6474;
+  --color-text-muted: #9ca3af;
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f6f7fd;
+  --color-bg-tertiary: #f8f9fc;
+  --color-bg-card: #ffffff;
+  --color-border: rgba(0, 0, 0, 0.05);
+  --color-border-menu: #f5f5f5;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-primary: color-mix(in srgb, var(--color-primary) 18%, transparent);
+  --color-shadow-primary-hover: color-mix(in srgb, var(--color-primary) 28%, transparent);
+  --color-section-dark: #262935;
+  --color-header-bg: rgba(255, 255, 255, 0.98);
+  --color-header-border: rgba(255, 255, 255, 0.2);
+  --color-hero-overlay: linear-gradient(to right, var(--color-primary) 0%, color-mix(in srgb, var(--color-primary) 25%, transparent) 100%);
+  --color-selection-bg: #249076;
+  --color-selection-fg: #fff;
+  --color-input-bg: #fff;
+  --color-input-border: rgba(0, 0, 0, 0.1);
+  --color-scrollbar-track: #f6f7fd;
+  --color-scrollbar-thumb: #dedede;
+}
+
+/* Dark theme - professional CV-inspired palette */
+[data-theme="dark"] {
+  --color-primary: #249076;
+  --color-primary-hover: #2ba88a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-text-muted: #6b7280;
+  --color-bg: #1B1D26;
+  --color-bg-secondary: #252830;
+  --color-bg-tertiary: #2d313a;
+  --color-bg-card: #252830;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-menu: rgba(255, 255, 255, 0.06);
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-shadow-primary: color-mix(in srgb, var(--color-primary) 22%, transparent);
+  --color-shadow-primary-hover: color-mix(in srgb, var(--color-primary) 32%, transparent);
+  --color-section-dark: #16213e;
+  --color-header-bg: rgba(30, 38, 27, 0.98);
+  --color-header-border: rgba(255, 255, 255, 0.1);
+  --color-hero-overlay: linear-gradient(to right, var(--color-primary) 0%, color-mix(in srgb, var(--color-primary) 25%, transparent) 100%);
+  --color-selection-bg: #249076;
+  --color-selection-fg: #fff;
+  --color-input-bg: #252830;
+  --color-input-border: rgba(255, 255, 255, 0.12);
+  --color-scrollbar-track: #2d313a;
+  --color-scrollbar-thumb: #4b5563;
+}

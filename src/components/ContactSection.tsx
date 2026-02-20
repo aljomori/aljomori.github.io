@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { WHATSAPP_URL } from '../constants'
+import { CONTACT, WHATSAPP_URL } from '../constants'
 
 export function ContactSection() {
   const { t } = useTranslation()
@@ -34,7 +34,9 @@ export function ContactSection() {
                 </div>
                 <h3>{t('contact.callMe')}</h3>
                 <ul>
-                  <li>(56) 940 866 411</li>
+                  <li>
+                    <a href={CONTACT.phoneTel}>{CONTACT.phone}</a>
+                  </li>
                 </ul>
               </div>
               <div className="col-12 col-md-6 col-lg-4 contact-info">
@@ -43,7 +45,9 @@ export function ContactSection() {
                 </div>
                 <h3>{t('contact.emailMe')}</h3>
                 <ul>
-                  <li>aljomori@gmail.com</li>
+                  <li>
+                    <a href={CONTACT.emailMailto}>{CONTACT.email}</a>
+                  </li>
                 </ul>
               </div>
               <div className="col-12 col-md-12 col-lg-4 contact-info">
@@ -52,7 +56,9 @@ export function ContactSection() {
                 </div>
                 <h3>{t('contact.address')}</h3>
                 <ul>
-                  <li>Santiago, Chile</li>
+                  <li>
+                    <a href={CONTACT.addressMaps} target="_blank" rel="noreferrer">{CONTACT.address}</a>
+                  </li>
                 </ul>
               </div>
             </div>

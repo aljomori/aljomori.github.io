@@ -159,8 +159,8 @@ h5.subtitle {
     height: 78px;
     width: 78px;
     animation: rotation 1s infinite linear;
-    border: 2px solid rgba(62, 67, 233, 0.29);
-    border-top-color: #3e43e9;
+    border: 2px solid rgba(88, 233, 62, 0.29);
+    border-top-color: #3ee97a;
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -699,6 +699,29 @@ h5.subtitle {
     margin-left: 0;
 }
 
+.about-area .resume-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.about-area .resume-dropdown .dropdown-toggle::after {
+    margin-left: 0.3em;
+}
+
+.about-area .resume-dropdown .dropdown-menu {
+    min-width: 180px;
+    padding: 0.25rem 0;
+}
+
+.about-area .resume-dropdown .dropdown-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
 .about-area .about-img {
     position: relative;
     overflow: hidden;
@@ -716,7 +739,6 @@ h5.subtitle {
 
 .about-area .about-content .about-role {
     font-weight: 700;
-    color: #333;
     font-size: 18px;
     margin-bottom: 13px;
     font-family: Raleway, sans-serif;
@@ -745,12 +767,16 @@ h5.subtitle {
  * -----------------------------------------------------------------------------
  */
 
+ .exp-content {
+    padding-bottom: 40px;
+ }
+ 
 .exp-content h2 {
     font-weight: 700;
 }
 
 .exp-content h2 span {
-    color: #3e43e9;
+    color: var(--color-primary);
 }
 
 .exp-content .subtitle {
@@ -913,7 +939,7 @@ h5.subtitle {
     flex: 1;
     min-height: 24px;
     margin-top: 4px;
-    background: linear-gradient(to bottom, #3e43e9, rgba(62, 67, 233, 0.3));
+    background: linear-gradient(to bottom, #3ee966, rgba(62, 67, 233, 0.3));
     align-self: center;
 }
 
@@ -921,15 +947,15 @@ h5.subtitle {
     flex: 1;
     background: #fff;
     padding: 20px 24px;
-    -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
-    box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+    -webkit-box-shadow: 0px 5px 35px 0px rgba(35, 85, 49, 0.15);
+    box-shadow: 0px 5px 35px 0px rgba(35, 85, 49, 0.15);
     border-radius: 8px;
     transition: box-shadow 200ms ease-out;
 }
 
 .timeline-content:hover {
-    -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.25);
-    box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.25);
+    -webkit-box-shadow: 0px 5px 35px 0px rgba(35, 85, 49, 0.15);
+    box-shadow: 0px 5px 35px 0px rgba(35, 85, 49, 0.15);
 }
 
 .timeline-header h3 {
@@ -1029,13 +1055,17 @@ h5.subtitle {
 .tech-legend-inline {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     margin-top: 20px;
 }
 
 .tech-legend-label {
+    display: inline-flex;
+    align-items: center;
     font-size: 13px;
     font-weight: 500;
+    line-height: 1;
     color: #5a6474;
 }
 
@@ -2105,11 +2135,6 @@ footer .copy-txt {
     .timeline-dot {
         width: 56px;
         height: 56px;
-    }
-
-    .timeline-logo {
-        width: 34px;
-        height: 34px;
     }
 
     .timeline-content {
